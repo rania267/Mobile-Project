@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6FA"
+    android:padding="16dp">
+
+    <!-- Image de l'hôtel -->
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hotel_image" />
+
+    <!-- Titre de l'hôtel -->
+    <TextView
+        android:id="@+id/hotel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hotel_image"
+        android:layout_marginTop="16dp"
+        android:text="Golden Hill Hotel Downtown"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Description de l'hôtel -->
+    <TextView
+        android:id="@+id/hotel_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hotel_title"
+        android:layout_marginTop="8dp"
+        android:text="Hôtel avec un spa et une piscine couverte dans le quartier de Centre-ville d'Istanbul" />
+
+    <!-- Affichage du tarif -->
+    <TextView
+        android:id="@+id/hotel_tarif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hotel_description"
+        android:layout_marginTop="8dp"
+        android:text="Tarif : $150 par nuit" />
+
+    <!-- Carte des informations en relation avec l'hôtel -->
+    <FrameLayout
+        android:id="@+id/hotel_info_map"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/hotel_tarif"
+        android:layout_marginTop="16dp">
+        <!-- Ajoutez ici votre carte d'informations, par exemple, MapView ou Google Maps. -->
+        <Button
+            android:id="@+id/reservation_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Réserver" />
+    </FrameLayout>
+
+    <!-- Bouton de réservation -->
+
+    <!-- Ajout d'une ligne de séparation -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/reservation_button"
+        android:layout_marginTop="16dp"
+        android:background="#808080" />
+
+    <!-- Bouton de retour en bas de la page -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Retour" />
+
+</RelativeLayout>

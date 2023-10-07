@@ -1,0 +1,120 @@
+<!-- fragment_ajouter_hotel.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'hôtel" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de l'hôtel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse de l'hôtel" />
+
+    <EditText
+        android:id="@+id/editTextAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse de l'hôtel" />
+
+    <!-- Champ de sélection de la date d'arrivée -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date d'arrivée" />
+
+    <EditText
+        android:id="@+id/editTextDateArrivee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sélectionner la date d'arrivée"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <!-- Champ de sélection de la date de départ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de départ" />
+
+    <EditText
+        android:id="@+id/editTextDateDepart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sélectionner la date de départ"
+        android:focusable="false"
+        android:clickable="true" />
+
+
+
+
+    <!-- Liste déroulante de catégories d'hôtels -->
+
+    <Button
+        android:id="@+id/buttonAjouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Hôtel"
+        android:layout_gravity="center" />
+
+    <!-- Image de l'hôtel -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="364dp"
+            app:srcCompat="@drawable/boook"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Bouton pour prendre une photo -->
+    <Button
+        android:id="@+id/buttonPrendrePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prendre une photo"
+        android:layout_gravity="center" />
+
+    <!-- Barre de progression -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+    <!-- Messages d'erreur et de confirmation -->
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        android:layout_gravity="center" />
+
+    <!-- Bouton de recherche -->
+    <Button
+        android:id="@+id/buttonRechercher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rechercher"
+        android:layout_gravity="center" />
+
+</LinearLayout>
